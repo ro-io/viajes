@@ -1,15 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Card from "./componentes/Card";
+import "./App.css";
 
 function App() {
-  
+  const departamento = ["La Paz", "Cochabanba", "Oruro"];
+  const colores = ["rojo","verde","cafe"]
   return (
     <>
-      
+      <div>
+        {departamento.map((ciudades, index) => (
+          <Card atributo={ciudades} colores={colores[index]}/>
+        ))}
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
