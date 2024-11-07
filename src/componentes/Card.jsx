@@ -1,5 +1,6 @@
 import React from "react";
 import Encabezado from "./Encabezado";
+import "./Card.css"
 
 const Card = ({ atributo }) => {
   return (
